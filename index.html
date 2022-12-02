@@ -34,27 +34,27 @@
             <section class="enlacesHeader">
                 <nav class="enlacesHeader">
                     <ul class="enlacesHeader">
-                        <li><a href="" class="enlace">Menú principal</a></li>
-                        <li id="menuComida"><a href="" class="enlace">Menú comida</a>
+                        <li><a href="#menuPrincipal" class="enlace">Menú principal</a></li>
+                        <li id="menuComida"><a href="#menuComidas" class="enlace">Menú comida</a>
                             <ul class="menuDesplegable">
-                                <li>Platos principales</li>
-                                <li>Bebidas</li>
-                                <li>Postres</li>
-                                <li>Paquetes</li>
+                                <li><a href="#platosPrincipales">Platos principales</a></li>
+                                <li> <a href="#bebidas">Bebidas</a> </li>
+                                <li> <a href="#postres">Postres</a> </li>
+                                <li> <a href="#paquetes">Paquetes</a> </li>
                             </ul>
                         </li>
-                        <li><a href="" class="enlace">Galería</a></li>
-                        <li><a href="" class="enlace">Promociones</a></li>
+                        <li><a href="#galeria" class="enlace">Galería</a></li>
+                        <li><a href="#promociones" class="enlace">Promociones</a></li>
                     </ul>
                 </nav>
             </section>
             <section class="btnHeaderContainer">
-                <button class="btnHeader">Contactanos</button>
+                <button class="btnHeader"> <a href="#footerContact" class="btnAReference">Contactanos</a></button>
             </section>
         </section>     
     </header>
     <main>
-        <section class="mainMenuPrincipal">
+        <section class="mainMenuPrincipal" id="menuPrincipal">
             <div class="backgroundImg"></div>
             <div class="mainRestauranteTextContainer">
                 <h2 class="titulos">Restaurante Familia y Tacos</h2>
@@ -154,11 +154,11 @@
                 <h2>¿Tienes antojo de algo?</h2>
                 <p>No te quedes con las ganas contáctanos ya</p>
                 <div>a</div>
-                <button class="btnHeader btnColorInvertido">Contactanos</button>
+                <button class="btnHeader btnColorInvertido"><a href="#footerContact" class="btnAReference">Contactanos</a></button>
             </section>
         </section>
-        <section class="mainMenuComida">
-            <section class="platosPrincipales">
+        <section class="mainMenuComida" id="menuComidas">
+            <section class="platosPrincipales" id="platosPrincipales">
                 <h2 class="titulos">Platos Principales</h2>
                 <section class="platosPrincipalesContainer">
                     <div class="platosContainer">
@@ -266,9 +266,9 @@
                 <h2>¿No puedes esperar hasta mañana?</h2>
                 <p>No te preocupes contamos con tiendas 24 hrs de Martes a Domingo</p>
                 <div>a</div>
-                <button class="btnHeader btnColorInvertido">Contactanos</button>
+                <button class="btnHeader btnColorInvertido"> <a href="#footerContact" class="btnAReference">Contactanos</a> </button>
             </section>
-            <section class="platosPrincipales bebidas">
+            <section class="platosPrincipales bebidas" id="bebidas">
                 <h2 class="titulos">Bebidas</h2>
                 <section class="platosPrincipalesContainer">
                     <div class="platosContainer">
@@ -336,7 +336,7 @@
                     </div>
                 </section>
             </section>
-            <section class="platosPrincipales Postres">
+            <section class="platosPrincipales Postres" id="postres">
                 <h2 class="titulos">Postres</h2>
                 <section class="platosPrincipalesContainer">
                     <div class="platosContainer">
@@ -371,10 +371,10 @@
                     <h2>¿No puedes decidir?</h2>
                     <p>Prueba con nuestros paquetes, seguro que encontraras el indicado para tí</p>
                     <div>a</div>
-                    <button class="btnHeader btnColorInvertido">Paquetes</button>
+                    <button class="btnHeader btnColorInvertido"> <a class="btnAReference" href="#paquetes">Paquetes</a> </button>
                 </section>
             </section>
-            <section class="paquetes">
+            <section class="paquetes" id="paquetes">
                 <h2 class="titulos paquetesTitle">Paquetes</h2>
                 <section class="paquetesContainer">
                     <div class="paqueteCard">
@@ -428,7 +428,7 @@
                 </section>
             </section>
         </section>
-        <section class="mainMenuGaleria">
+        <section class="mainMenuGaleria" id="galeria">
             <section class="platosPrincipales galeriaContainer">
                 <h2 class="titulos">Galeria</h2>
                 <section class="platosPrincipalesContainer">
@@ -471,7 +471,7 @@
                 </section>
             </section>
         </section>
-        <section class="mainMenuPromociones">
+        <section class="mainMenuPromociones" id="promociones">
             <h2 class="titulos paquetesTitle">Promociones</h2>
             <section class="paquetesContainer">
                 <div class="paqueteCard">
@@ -526,7 +526,12 @@
         </section>
     </main>
     <footer>
-
+        <section class="barraAntojo" id="footerContact">
+            <h2>Lamentablemente no se puede contactar</h2>
+            <p>Este es simplemente un proyecto final para la clase de programación web 1559 <br> Creado por el alumno: Hernandez Soledad Angel Agustín</p>
+            <div>.</div>
+            <button class="btnHeader btnColorInvertido"> <a class="btnAReference">Llorar</a> </button>
+        </section>
     </footer>
     
 </body>

@@ -73,6 +73,10 @@ html {
     display: block;
     
 }
+.menuDesplegable li a {
+    color: var(--white-cool);
+    text-decoration: none;
+}
 .menuDesplegable li:hover {
     text-decoration: underline;
     transition: .3s;
@@ -93,6 +97,10 @@ html {
     padding-left: 10px;;
     color: var(--white-cool);
 }
+.btnAReference {
+    text-decoration: none;
+    color: black;
+}
 .btnHeaderContainer {
     display: flex;
     justify-content: center;
@@ -111,6 +119,7 @@ html {
     margin-bottom: 10px;
     transition: .3s;
 }
+
 
 /* --------------------------- Body de la pagina ------------------------ */
 
@@ -268,6 +277,12 @@ main {
     margin-bottom: 10px;
     transition: .3s;
 }
+.btnColorInvertido a {
+    color: var(--orange-color);
+}
+.btnColorInvertido:hover a {
+    color: var(--white-cool);
+}
 
 /* Seccion platos Principales */
 .platosPrincipales {
@@ -377,7 +392,14 @@ main {
 .galeriaContainer {
     margin-bottom: 30px;
 }
-
+/* Promociones */
+.mainMenuPromociones {
+    margin-bottom: 90px;
+}
+/* Footer */
+#footerContact {
+    text-align: center;
+}
 
 
 /* Media Queries */
