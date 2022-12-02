@@ -1,0 +1,392 @@
+/* Variables */
+:root {
+    --orange-color: #ff8c42;
+    --orange-middle: #fcaf58;
+    --softh-orange: #f9c784;
+    --white-cool: #ffffff;
+    --blue: #4e598c;
+}
+/* Etiquetas basicas Css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+/* --------------------------- Header de la pagina ------------------------ */
+.agregueEstoPqSiNoElFixedNoFunciona {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-cool);
+    box-shadow: 10px 3px 5px rgb(168, 168, 168);
+    z-index: 3;
+}
+.primerParteHeader {
+    display: flex;
+}
+.taco {
+    width: 80px;
+    margin: 10px 30px;
+}
+.cuadritos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.cuadrito {
+    background-color: var(--orange-color);
+    width: 3px;
+    height: 3px;
+}
+.enlacesHeader {
+    display: flex;
+    align-items: center;
+}
+.enlacesHeader li {
+    list-style: none;
+}
+.enlace {
+    text-decoration: none;
+    color: var(--blue);
+    margin-right: 70px;
+    font-size: 3rem;
+}
+.enlace:hover {
+    text-decoration: underline;
+    color: var(--orange-color);
+    
+}
+.enlacesHeader #menuComida:hover .menuDesplegable{
+    background-color: var(--orange-middle);
+    transition: .2s;
+}
+.enlacesHeader #menuComida:hover .menuDesplegable li{
+    display: block;
+    
+}
+.menuDesplegable li:hover {
+    text-decoration: underline;
+    transition: .3s;
+    cursor: pointer;
+}
+.menuDesplegable {
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 180px;
+    height: 110px;
+}
+.menuDesplegable li {
+    display: none;
+    font-size: 1.8rem;
+    padding-left: 10px;;
+    color: var(--white-cool);
+}
+.btnHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnHeader {
+    background-color: var(--orange-middle);
+    border: none;
+    padding: 10px 60px;
+    font-size: 2rem;
+    margin-right: 40px;
+}
+.btnHeader:hover {
+    cursor: pointer ;
+    background-color: var(--softh-orange);
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+/* --------------------------- Body de la pagina ------------------------ */
+
+/* Menu Principal */
+main {
+    margin-top: 140px;
+}
+.mainMenuPrincipal .backgroundImg {
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    margin-top: 40px;
+    background-image: url('https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gOBLQNdNJ6iNg0dV6SZFyX5DkruYpxdHxpfjdfePOFnBNIAAEVp7QZ17dDvMNH9-y7QJb32PX8X6iLL0SOf0RFfqYO1=w2560-h1301');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mainRestauranteTextContainer {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+.titulos {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--orange-color);
+}
+.mainMenuPrincipal .mainRestauranteTextContainer p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--blue);
+}
+/* Tablas tacos */
+.contenedorTablasSecciones {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    text-align: center;
+}
+.mainTacosTable {
+    width: 70%;
+    scroll-snap-align: center;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 90px;
+    font-family: "Inter", sans-serif;
+    
+}
+.mainTacosTable .tacosTableTitle {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+/* Color titulo tabla */
+.tacosTableTitle {
+    color: var(--orange-middle);
+}
+
+.tacosTableContainer {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.tacosTableContainer table {
+    width: 100%;
+    height: 100%;
+}
+.tacosTableContainer td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--blue);
+    background-color: var(--white-cool); 
+    border: var(--blue) 1px solid;
+}
+.tablaTopIzquierda {
+    border-radius: 15px 0 0 0;
+}
+.tablaTopDerecha {
+    border-radius: 0 15px 0 0;
+}
+.tablaBottonIzquierda {
+    border-radius: 0 0 0 15px;
+}
+.tableBottomDerecha {
+    border-radius: 0 0 15px 0;
+}
+.tacosTableContainer .tablaDerecha {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.datosActualizadosTabla {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.soft--orange {
+    background-color: var(--softh-orange);
+}
+.datosActualizadosTabla p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--blue);
+}
+/* Sección de Antojo */
+.barraAntojo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 237px;
+    background-color: var(--orange-color);
+
+}
+.barraAntojo h2 {
+    color: var(--white-cool);
+    font-size: 4rem;
+}
+.barraAntojo p {
+    color: var(--white-cool);
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+.btnColorInvertido {
+    position: absolute;
+    margin-top: 140px;
+    background-color: var(--white-cool);
+    color: var(--orange-color);
+    margin-right: 0px;
+}
+.btnColorInvertido:hover {
+    cursor: pointer ;
+    background-color: var(--orange-color);
+    color: var(--white-cool);
+    border: var(--white-cool) 1px solid;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+/* Seccion platos Principales */
+.platosPrincipales {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.platosPrincipales .titulos:first-child {
+    margin: 90px auto;
+    font-size: 6rem;
+}
+.platosPrincipalesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.platosContainer {
+    width: 25%;
+    height: 25%;
+
+}
+.menuImg {
+    width: 70%;
+    height: 70%;
+    min-width: 140px; 
+    cursor: pointer;  
+}
+.platosContainer .titulos {
+    margin: 20px auto;
+}
+.platosContainer p {
+    margin-bottom: 60px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    color: var(--blue);
+}
+/* Bebidas */
+.bebidasImg {
+    border-radius: 400px;
+}
+/* Paquetes */
+.paquetesTitle {
+    margin: 60px;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+}
+.paquetesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.paqueteCard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 10px;
+    border: var(--blue) 1px solid;
+    width: 45%;
+    border-radius: 10px;
+}
+.paqueteCard ul:first-child {
+    width: 20%;
+}
+.paqueteCard ul:nth-child(2) {
+    width: 80%;
+}
+.paqueteCard ul:first-child li {
+    width: auto;
+    height: auto;
+    max-width: 274px;
+    max-height: 274px;
+}
+.paqueteCard ul:nth-child(2) li{
+    width: 100%;
+}
+.paqueteCard li {
+    list-style: none;
+    width: 400px;
+}
+.paqueteCard img {
+    padding: 13px;
+    width: 100%;
+    border-radius: 20px;
+}
+.paqueteCard h2 {
+    color: var(--orange-middle);
+    margin: 15px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+.paqueteCard p {
+    color: var(--blue);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+}
+/* Galeria */
+.galeria .galeriaImg {
+    margin-bottom: 20px;
+}
+.galeriaContainer {
+    margin-bottom: 30px;
+}
+
+
+
+/* Media Queries */
+@media (min-width: 930px) {
+    .contenedorTablasSecciones {
+        justify-content: center;
+        overflow-x: unset;
+        width: 930px;
+        margin: 0 auto;
+        
+    }
+}
